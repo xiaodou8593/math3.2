@@ -1,0 +1,31 @@
+#math:_init
+# 初始化数学库
+
+# 基础设置
+function math:break_command_limit
+execute in minecraft:overworld run function marker_control:_init
+scoreboard players set 1024 int 1024
+scoreboard players set 2000 int 2000
+scoreboard players set 4000 int 4000
+scoreboard players set 20000 int 20000
+
+# 建立记分板
+scoreboard objectives add n dummy
+
+# 函数调用栈
+data modify storage math:io rec set value [{}]
+
+# 临时对象初始化
+data modify storage math:io rotation set value [0.0f,0.0f]
+data modify storage math:io xyz set value [0.0d,0.0d,0.0d]
+data modify storage math:io xyzw set value [0.0f,0.0f,0.0f,0.0f]
+data modify storage math:io scale set value [0.0f,0.0f,0.0f]
+data modify storage math:io translation set value [0.0f,0.0f,0.0f]
+
+
+# 初始化子模块
+function math:float/init
+
+# 初始化记录
+function math:_version
+scoreboard players operation math_init_version int = version int
