@@ -3,5 +3,4 @@
 # 输入<inp,int>
 # 输出<res,int>
 
-execute if score inp int matches ..10000 run function math:sqrt/range3
-execute if score inp int matches 10001.. run function math:sqrt/range4
+execute store result score res int run compute default float math:_sqrt 1000

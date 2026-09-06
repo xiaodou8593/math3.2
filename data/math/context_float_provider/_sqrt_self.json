@@ -1,0 +1,14 @@
+{
+	"type":"sqrt",
+	"input":{
+		"type":"from_int",
+		"input":{
+			"type":"score",
+			"target":{
+				"type":"fixed",
+				"name":"sqrt"
+			},
+			"score":"int"
+		}
+	}
+}
