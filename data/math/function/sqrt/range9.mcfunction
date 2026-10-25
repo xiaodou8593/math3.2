@@ -1,4 +1,4 @@
-#math:sqrt/range4
+#math:sqrt/range9
 scoreboard players operation sstemp int = sqrt int
 
 function math:sqrt/_self
