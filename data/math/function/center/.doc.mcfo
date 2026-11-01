@@ -1,0 +1,8 @@
+#math:center/doc.mcfo
+
+# center临时对象
+_this:{
+	<x,int,1w>,
+	<y,int,1w>,
+	<z,int,1w>
+}
